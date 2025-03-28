@@ -4,8 +4,8 @@ import Link from "next/link";
 import MealsGrid from "../../components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 
-const Meals = () => {
-  const meals = getMeals();
+const  Meals = async () => {
+  const meals = await getMeals();
   return (
     <>
       <header className={classes.header}>
